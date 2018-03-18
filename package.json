@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "webpack webpack.config.js --mode development --display-error-details"
+  },
+  "devDependencies": {
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
+  },
+  "dependencies": {}
+}
