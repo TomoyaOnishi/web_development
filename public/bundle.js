@@ -75,10 +75,23 @@
 /*!*******************!*\
   !*** ./js/App.js ***!
   \*******************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log('Hello world2');\n\n\n\n//# sourceURL=webpack:///./js/App.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Sub_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Sub.js */ \"./js/Sub.js\");\n\n\nwindow.test = function() {\n    console.log('###test');\n    Object(_Sub_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n};\n\n//# sourceURL=webpack:///./js/App.js?");
+
+/***/ }),
+
+/***/ "./js/Sub.js":
+/*!*******************!*\
+  !*** ./js/Sub.js ***!
+  \*******************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return sub; });\nfunction sub() {\n    console.log('Call sub');\n}\n\n//# sourceURL=webpack:///./js/Sub.js?");
 
 /***/ }),
 
