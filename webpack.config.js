@@ -2,7 +2,7 @@ const path = require('path');
 
 const paths = {
     PUBLIC: path.resolve(__dirname, 'public'),
-    JS: path.resolve(__dirname, 'js'),
+    JS: path.resolve(__dirname, 'source/js'),
 };
 
 console.log('related paths: \n', paths);
@@ -32,7 +32,19 @@ module.exports = {
                     }
 
                 ]
+            },
+
+            {
+                test: /\.css$/,
+                use: [
+
+                    'style-loader',
+
+                    {loader: 'css-loader', options: {url: false}},
+
+                ]
             }
+
 
         ]
     }
