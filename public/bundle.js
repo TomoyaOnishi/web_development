@@ -71,14 +71,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/index.js??ref--5-1!./source/css/style.css":
-/*!******************************************************************!*\
-  !*** ./node_modules/css-loader??ref--5-1!./source/css/style.css ***!
-  \******************************************************************/
+/***/ "./node_modules/css-loader/index.js??ref--5-1!./node_modules/sass-loader/lib/loader.js!./source/css/style.scss":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js!./source/css/style.scss ***!
+  \************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"body {\\n    background-color: orange;\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./source/css/style.css?./node_modules/css-loader??ref--5-1");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"body {\\n  background-color: skyblue; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./source/css/style.scss?./node_modules/css-loader??ref--5-1!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -137,14 +137,14 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
-/***/ "./source/css/style.css":
-/*!******************************!*\
-  !*** ./source/css/style.css ***!
-  \******************************/
+/***/ "./source/css/style.scss":
+/*!*******************************!*\
+  !*** ./source/css/style.scss ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader??ref--5-1!./style.css */ \"./node_modules/css-loader/index.js??ref--5-1!./source/css/style.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./source/css/style.css?");
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader??ref--5-1!../../node_modules/sass-loader/lib/loader.js!./style.scss */ \"./node_modules/css-loader/index.js??ref--5-1!./node_modules/sass-loader/lib/loader.js!./source/css/style.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./source/css/style.scss?");
 
 /***/ }),
 
@@ -156,7 +156,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader??re
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Sub */ \"./source/js/Sub.js\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/style.css */ \"./source/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nwindow.test = function () {\n    console.log('###window.test()');\n    var sub = new _Sub__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n    sub.call();\n};\n\n//# sourceURL=webpack:///./source/js/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Sub */ \"./source/js/Sub.js\");\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/style.scss */ \"./source/css/style.scss\");\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_style_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nwindow.test = function () {\n    console.log('###window.test()');\n    var sub = new _Sub__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n    sub.call();\n};\n\n//# sourceURL=webpack:///./source/js/App.js?");
 
 /***/ }),
 
@@ -179,7 +179,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar _createClass = function (
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function(__dirname) {var path = __webpack_require__(/*! path */ \"./node_modules/path-browserify/index.js\");\n\nvar paths = {\n    PUBLIC: path.resolve(__dirname, 'public'),\n    JS: path.resolve(__dirname, 'source/js')\n};\n\nconsole.log('related paths: \\n', paths);\n\nmodule.exports = {\n    entry: path.join(paths.JS + '/App.js'),\n    output: {\n        path: paths.PUBLIC,\n        filename: 'bundle.js'\n    },\n    module: {\n        rules: [{\n            test: /\\.js$/,\n            use: [{\n                loader: 'babel-loader',\n                options: {\n                    presets: [['env', { modules: false }]]\n                }\n            }]\n        }, {\n            test: /\\.css$/,\n            use: ['style-loader', { loader: 'css-loader', options: { url: false } }]\n        }]\n    }\n};\n/* WEBPACK VAR INJECTION */}.call(this, \"/\"))\n\n//# sourceURL=webpack:///./webpack.config.js?");
+eval("/* WEBPACK VAR INJECTION */(function(__dirname) {var path = __webpack_require__(/*! path */ \"./node_modules/path-browserify/index.js\");\n\nvar paths = {\n    PUBLIC: path.resolve(__dirname, 'public'),\n    JS: path.resolve(__dirname, 'source/js')\n};\n\nconsole.log('related paths: \\n', paths);\n\nmodule.exports = {\n    entry: path.join(paths.JS + '/App.js'),\n    output: {\n        path: paths.PUBLIC,\n        filename: 'bundle.js'\n    },\n    module: {\n        rules: [{\n            test: /\\.js$/,\n            use: [{\n                loader: 'babel-loader',\n                options: {\n                    presets: [['env', { modules: false }]]\n                }\n            }]\n        }, {\n            test: /\\.scss/,\n            use: ['style-loader', {\n                loader: 'css-loader',\n                options: {\n                    url: false,\n                    importLoaders: 2\n                }\n\n            }, {\n                loader: 'sass-loader'\n            }]\n        }]\n    }\n};\n/* WEBPACK VAR INJECTION */}.call(this, \"/\"))\n\n//# sourceURL=webpack:///./webpack.config.js?");
 
 /***/ }),
 

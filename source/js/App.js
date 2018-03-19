@@ -1,5 +1,5 @@
 import Sub from './Sub';
-import '../css/style.css';
+import '../css/style.scss';
 
 window.test = function() {
     console.log('###window.test()');
