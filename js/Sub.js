@@ -1,3 +1,5 @@
-export default function sub() {
-    console.log('Call sub');
+export default class Sub {
+    call() {
+        console.log('###Sub.call()');
+    }
 }

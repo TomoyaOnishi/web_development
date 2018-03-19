@@ -1,6 +1,7 @@
-import sub from './Sub.js';
+import Sub from './Sub';
 
 window.test = function() {
-    console.log('###test');
-    sub();
+    console.log('###window.test()');
+    var sub = new Sub();
+    sub.call();
 };
