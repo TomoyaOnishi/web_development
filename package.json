@@ -1,4 +1,6 @@
 {
+  "homepage": ".",
+  "main": "./source/electrin.js",
   "scripts": {
     "build": "webpack webpack.config.js --mode development --display-error-details"
   },
@@ -12,6 +14,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.11",
+    "electron": "^1.8.4",
     "extract-loader": "^1.0.2",
     "file-loader": "^1.1.11",
     "node-sass": "^4.7.2",
