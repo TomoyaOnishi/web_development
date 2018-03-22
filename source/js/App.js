@@ -1,20 +1,20 @@
-import Sub from './Sub';
 import '../css/style.scss';
-import {MDCRipple} from '@material/ripple';
-import ReactDOM from 'react-dom';
 import React from 'react';
+import ReactDOM from 'react-dom';
 
-window.test = function() {
-    console.log('###window.test()');
-    var sub = new Sub();
-    sub.call();
-    const ripple = new MDCRipple(document.querySelector('.foo-button'));
-};
+import {MDCRipple} from '@material/ripple';
 
 class TestComponent extends React.Component {
 
+    componentDidMount() {
+        MDCRipple.attachTo(document.querySelector('.mdc-button'));
+    }
+
     render() {
-        return (<div></div>);
+        return (
+            <div>
+                <button className={'mdc-button'}>button</button>
+            </div>);
     }
 
 }
