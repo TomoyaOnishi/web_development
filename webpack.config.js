@@ -25,13 +25,16 @@ module.exports = {
                         options: {
                             presets: [
 
-                                ['env', {modules: false}]
+                                ['env', {modules: false}],
+
+                                'react'
 
                             ]
                         }
                     }
 
-                ]
+                ],
+                exclude: /node_modules/
             },
 
             {
