@@ -33,8 +33,7 @@ module.exports = {
                         }
                     }
 
-                ],
-                exclude: /node_modules/
+                ]
             },
 
             {
@@ -62,7 +61,9 @@ module.exports = {
                                     return {file: require('path').resolve(nodeModulePath)};
                                 }
                                 return {file: url};
-                            }
+                            },
+                            sourceMap: true,
+                            includePaths: ['./node_modules/']
                         }
                     }
                 ]

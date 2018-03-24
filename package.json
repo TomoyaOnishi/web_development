@@ -2,7 +2,8 @@
   "homepage": ".",
   "main": "./source/electron.js",
   "scripts": {
-    "build": "webpack webpack.config.js --mode development --display-error-details"
+    "build": "webpack --mode development --display-error-details",
+    "watch": "webpack --mode development --display-error-details --progress --colors --watch"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -20,9 +21,7 @@
     "webpack-cli": "^2.0.12"
   },
   "dependencies": {
-    "@material/auto-init": "^0.32.0",
-    "@material/button": "^0.32.0",
-    "@material/form-field": "^0.33.0",
+    "material-components-web": "^0.33.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
